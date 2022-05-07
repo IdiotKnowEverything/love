@@ -34,8 +34,8 @@ canvas{
 	background:#333;
 }
 #canvas_container{
-	width:940px;
-	/*width:fit-content;*/
+	/* width:940px; */
+	width:fit-content;
 	height:380px;
 	position: absolute;
 	margin:auto;
