@@ -822,7 +822,7 @@ window.onload = function(){
 				rewindFrame++;
 				if(rewindFrame>=rewindLevel.frames.length){
 					CURRENT_LEVEL++;
-					if(CURRENT_LEVEL<4){
+					if(CURRENT_LEVEL<LEVEL_CONFIG.length){
 						startPlayback();
 					}else{
 
@@ -859,6 +859,7 @@ var STAGE = 0;
 
 function next(){
 	CURRENT_LEVEL++;
+	debugger
 	if(CURRENT_LEVEL<LEVEL_CONFIG.length){
 
 		createjs.Sound.play("ding");
@@ -909,7 +910,7 @@ function iHeartYou(){
 	if(window.location.hash){
 		vtext.textContent = encryptString(decodeURIComponent(window.location.hash).substring(1));
 	}else{
-		vtext.textContent = "Happy Birthday To You!";
+		vtext.textContent = "做我女朋友吧！";
 	}
 
 	setTimeout(function(){
